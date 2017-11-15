@@ -58,10 +58,11 @@ public class Maquina extends Thread {
 		{
 			if(dinero >= articulos.get(articulo))
 			{
-				System.out.print("Procesando pago...");
+				System.out.println("Procesando pago...");
 				try {
 					sleep(1000);
 					System.out.println("Tome su producto");
+					System.out.println("Devolviendo " + (dinero- articulos.get(articulo)));
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
